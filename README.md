@@ -20,8 +20,8 @@ Run the scraper::
 Got issues or questions?
 -------
 
-    :wave: [Email Me](mailto:oketunjifinbarrs@gmail.com)
-    :panda_face:
+:wave: [Email Me](mailto:oketunjifinbarrs@gmail.com)
+:panda_face:
 
 License 
 -------
