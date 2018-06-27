@@ -1,4 +1,4 @@
-MLB Scraper
+MLB Scraper .. image:: https://travis-ci.org/afoke/mlb-scraper.svg?branch=master :target: https://travis-ci.org/afoke/mlb-scraper
 =============
 Scrape www.baseball-reference.com for MLB stats.
 
