@@ -17,7 +17,7 @@ Run the scraper::
 
     python3 baseball.py
 
-Got issues or questions?
+## Got issues or questions?
 -------
 
     :wave: [Email Me](mailto:oketunjifinbarrs@gmail.com)
