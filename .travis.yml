@@ -4,6 +4,7 @@ python:
 # install dependencies
 install:
   - pip3 install -r requirements.txt
+  - pip3 install requests
 # run command
 script:
   - python3 baseball.py
