@@ -1,29 +1,23 @@
-MLB Scraper [![Build Status](https://travis-ci.org/afoke/mlb-scraper.svg?branch=master)](https://travis-ci.org/afoke/mlb-scraper)
-=============
+# MLB Scraper [![Build Status](https://travis-ci.org/0xnu/mlb-scraper.svg?branch=master)](https://travis-ci.org/0xnu/mlb-scraper)
+
 Scrape www.baseball-reference.com for MLB stats.
 
-Install Requirements
-------------
+## Install Requirements
 
-Python 3 is required to the scraper. Install the project's dependencies
-with::
+Python 3 is required to the scraper. Install the project's dependencies with:
 
-    pip3 install -r requirements.txt
+```shell
+pip3 install -r requirements.txt
+```
 
-Running
--------
+## Running
 
 Run the scraper::
 
-    python3 baseball.py
+```shell
+python3 baseball.py
+```
 
-Got issues or questions?
--------
+## Got issues or questions?
 
-:wave: [Email Me](mailto:oketunjifinbarrs@gmail.com)
-:panda_face:
-
-License 
--------
-
-    MIT
+:sunglasses: :wave: [Email Me](mailto:oketunjifinbarrs@gmail.com)
