@@ -256,7 +256,7 @@ def git_add(file):
 
 
 def git_commit(message):
-    subprocess.call(["git", "commit", "-m", "baseball stats"])
+    subprocess.call(["git", "commit", "-S", "-m", "baseball stats"])
 
 
 def git_push():
