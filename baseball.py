@@ -1,9 +1,7 @@
-import re
-import csv
-import sys
-import requests
-import json
-import subprocess
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import re, csv, sys, requests, json, subprocess
 from bs4 import BeautifulSoup
 from datetime import datetime
 from multiprocessing import Process
@@ -12,7 +10,6 @@ from shutil import move
 from os import fdopen, remove
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
-
 
 def pitching(file):
     url = "https://www.baseball-reference.com/leagues/MLB/2018-standard-pitching.shtml"
@@ -69,7 +66,6 @@ def pitching(file):
 
     f.close()
     fix(file)
-
 
 def team_batting(file):
     url = "https://www.baseball-reference.com/leagues/MLB/2018.shtml"
@@ -250,20 +246,6 @@ def fix(file):
     w.writelines([line for line in lines[:-1]])
     w.close()
 
-
-def git_add(file):
-    subprocess.call(["git", "add", file])
-
-
-def git_commit(message):
-    subprocess.call(["git", "commit", "-S", "-m", "baseball stats"])
-
-
-def git_push():
-    subprocess.call(["git", "push", "origin", "master"])
-    #subprocess.call(["git", "push", "lab", "master"])
-
-
 if __name__ == "__main__":
     start = datetime.now()
 
@@ -287,12 +269,5 @@ if __name__ == "__main__":
     with open("log.txt", 'a') as f:
         f.write(today + " - " + str(total) + "\n")
 
-    git_add("log.txt")
-    git_add("batting.csv")
-    git_add("pitching.csv")
-    git_add("team_batting.csv")
-    git_add("team_pitching.csv")
-    git_commit("baseball")
-    git_push()
-
     sys.exit(0)
+
