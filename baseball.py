@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re, csv, sys, requests, json, subprocess
+import re
+import csv
+import sys
+import requests
+import json
+import subprocess
 from bs4 import BeautifulSoup
 from datetime import datetime
 from multiprocessing import Process
