@@ -8,3 +8,6 @@ install:
 # run command
 script:
   - python3 baseball.py
+
+after_success:
+  - coveralls
